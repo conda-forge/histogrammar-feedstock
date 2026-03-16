@@ -1,5 +1,5 @@
 {% set name = "histogrammar" %}
-{% set version = "1.0.32" %}
+{% set version = "1.1.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,11 +7,11 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/histogrammar-{{ version }}.tar.gz
-  sha256: 873997ac7e3e690ab291e69b46a96b9d76493c542a7793fd58b2ed72120fabcd
+  sha256: ffea5e62dc793a75188a2b5850bdeb963c305dd24d7a880669608bd4a15bf0ac
 
 build:
   script: {{ PYTHON }} -m pip install . -vv
-  number: 3
+  number: 0
 
 requirements:
   host:
